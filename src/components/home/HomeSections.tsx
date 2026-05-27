@@ -229,7 +229,7 @@ export function CategoriesSection({ categories, loading }: { categories: Categor
                 <div key={i} className="h-[120px] rounded-2xl skeleton"/>
               ))
             : categories.map((c, i) => {
-                const variant = VARIANT_MAP[c.id] || VARIANT_MAP[c.slug] || 'gold'
+                const variant = VARIANT_MAP[c.id] || 'gold'
                 return (
                   <FadeUp key={c.id} delay={i * 0.06}>
                     <Link href={`/shop?category=${c.id}`}

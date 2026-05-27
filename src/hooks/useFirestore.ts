@@ -245,7 +245,7 @@ export async function submitOrder(params: {
       adminNotes   : '',
       trackingInfo : '',
       estimatedDelivery: '',
-      totalAmount  : params.cartItems.reduce((s, i) => s + i.price * i.quantity, 0),
+      totalAmount  : params.cartItems.reduce((s: number, i) => s + i.price * i.quantity, 0),
       items        : params.cartItems.map(i => ({
         productId        : i.productId,
         productName      : i.productName,
