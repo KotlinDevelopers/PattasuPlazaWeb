@@ -34,6 +34,7 @@ function ShopContent() {
   const { products, loading }    = useProducts()
   const { categories }           = useCategories()
   const { config }               = useAppConfig()
+  const enableStockManagement    = config?.enableStockManagement ?? true
   const minOrder = config?.minimumOrderValue || 2000
 
   const filtered = useMemo(() => {

@@ -123,8 +123,10 @@ export interface AppConfig {
   privacyPolicy:      string
   helpText:           string
   // Maintenance
-  maintenanceMode:    boolean
-  maintenanceMessage: string
+  maintenanceMode:       boolean
+  maintenanceMessage:    string
+  // Stock Management
+  enableStockManagement: boolean
 }
 
 export interface CartItem {

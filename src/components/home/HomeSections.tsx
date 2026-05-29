@@ -354,7 +354,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
                 ⭐ Top
               </span>
             )}
-            {product.stockCount <= 10 && product.stockCount > 0 && (
+            {enableStockManagement && product.stockCount <= 10 && product.stockCount > 0 && (
               <span className="absolute bottom-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#FF9800]/20 text-[#FF9800] border border-[#FF9800]/30 z-10">
                 Only {product.stockCount} left!
               </span>
